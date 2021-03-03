@@ -75,7 +75,7 @@ p {
 	display: inline-block;
 }
 .logo img {
-	max-width: 94px;
+	width: 118px;
 	height: auto;
 }
 .logo-wrap {
@@ -740,7 +740,7 @@ p {
 	background-size: cover;
 }
 .item-preorder {
-	max-width: 315px;
+	max-width: 270px;
 	margin-top: 90px;
 }
 .item-preorder__head {
@@ -923,9 +923,9 @@ p {
 	display: block;
 }
 .block-form__image {
-	margin-right: -92px;
-	right: 100%;
-	bottom: -118px;
+    margin-right: -223px;
+    right: 100%;
+    bottom: -91px;
 	position: absolute;
 }
 .wrap-items-preorder {
@@ -1146,22 +1146,26 @@ border-radius: 8px;
 	font-size: 20px;
 line-height: 1.2;
 font-weight: 600;
-padding-bottom: 10px;
+padding-bottom: 6px;
 color: #34282c;
+}
+.item-team__content a {
+	color: #33272b;
 }
 .item-team__content p {
 	font-size: 14px;
-line-height: 1.2;
+line-height: 24px;
 font-weight: 500;
+
 }
 .item-team__content {
 	bottom: 30px;
 	right: -55px;
-	padding: 25px 43px;
+	padding: 21px 43px;
 	background-color: #ffffff;
 border-radius: 6px;
 position: absolute;
-max-width: 280px;
+width: 279px;
 z-index: 1;
 transition: all 0.3s;
 }
@@ -1207,7 +1211,7 @@ color: #fff;
 	transform: translateY(-10px);
 }
 .item-news__date {
-	padding-top: 50px;
+	padding-top: 40px;
 	padding-bottom: 20px;
 	display: block;
 	line-height: 1.2;
@@ -1251,6 +1255,7 @@ background-color: #d9acc4;
 }
 .item-news__image {
 	height: 318px;
+	display: block;
 border-radius: 6px;
 }
 .item-news__image img {
@@ -1268,6 +1273,7 @@ border-radius: 6px;
 	background-color: #fff;
 }
 .col-lg-4 .item-news .item-news__date {
+	padding-top: 35px;
 	color: #ba4986;
 }
 #map {
@@ -1398,19 +1404,20 @@ border-radius: 50%;
 	display: none;
 }
 .slick-dots li {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
+	margin: 0 10px;
 }
 .slick-dots li button {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	padding: 0;
 	border: none;
-	background-color: rgba(124,205,72,0.6);
+	background-color: #7ccd48;
 }
 .slick-dots li button:hover,
 .slick-dots li.slick-active button {
-	background-color: rgba(124,205,72,1);
+	background-color: #ab2e59;
 }
 .slick-dots {
 	bottom: 0;
@@ -1501,3 +1508,115 @@ border-radius: 50%;
     -webkit-filter: grayscale(100%);
     /* Chrome 19+ & Safari 6+ */
 }
+.vegetables .title-section {
+	padding-bottom: 40px;
+	text-align: center;
+	margin: 0 auto;
+}
+.item-video {
+	margin-bottom: 24px;
+	height: 254px;
+	padding: 13px;
+	background-color: #ffffff;
+box-shadow: 0px 15px 20px 0px rgba(190,72,124,0.15);
+border-radius: 10px;
+	display: block;
+	position: relative;
+}
+.item-video img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-video__icon {
+	width: 89px;
+height: 89px;
+font-size: 18px;
+color: #fff;
+background-color: rgba(124,205,72,0.5);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: absolute;
+z-index: 1;
+margin: auto;
+}
+.item-video__icon::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 9px;
+	bottom: 9px;
+	left: 9px;
+	right: 9px;
+	background-color: #7ccd48;
+	z-index: -1;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+.item-video:hover .item-video__icon::before {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.slider-photos__item img {
+	max-height: 492px;
+	max-width: 100%;
+	width: 100%;
+}
+.slider-photos .slick-arrow {
+	width: 42px;
+height: 42px;
+background-color: rgba(255,255,255,0.7);
+}
+.slider-photos .slick-arrow:hover {
+	background-color: rgba(255,255,255,1);
+}
+.slider-photos .slick-arrow::after {
+	display: none;
+}
+.slider-photos .slick-prev {
+	left: 10px;
+}
+.slider-photos .slick-next {
+	right: 10px;
+}
+.slider-photos {
+	position: relative;
+	z-index: 1;
+}
+.slider-photos::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	top: 33px;
+	height: 513px;
+	left: 0;
+	background-image: url(../img/bg_video.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.slider-photos .slick-dots {
+	bottom: -60px;
+}
+.vitamins .container {
+	position: relative;
+}
+.vitamins__leaves {
+    bottom: -73px;
+	right: 270px;
+	position: absolute;
+} 

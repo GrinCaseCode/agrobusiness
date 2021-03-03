@@ -108,6 +108,16 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-photos').slick({
+		arrows: true,
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		slidesToScroll: 1,
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
