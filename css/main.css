@@ -1619,4 +1619,231 @@ background-color: rgba(255,255,255,0.7);
     bottom: -73px;
 	right: 270px;
 	position: absolute;
+} 
+
+/*news*/ 
+/*news*/ 
+/*news*/ 
+.title-section_page {
+	padding-top: 20px;
+	text-align: center;
+}
+.header_page {
+	background-color: #fff;
+}
+.row_news-page > div {
+	margin-top: 30px;
+}
+.news-page .item-news {
+	box-shadow: 0px 15px 20px 0px rgba(190,72,124,0.15);
+}
+.pager {
+	height: 70px;
+	margin-top: 44px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.page-numbers {
+	margin: 0 22px;
+	color: #34282c;
+	font-weight: 500;
+}
+.pager .next,
+.pager .prev {
+	width: 44px;
+	height: 44px;
+	color: #34282c;
+	font-size: 16px;
+	background-color: rgba(124,205,72,0.2);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	justify-content: center;
+	transition: all 0.3s;
+	position: absolute;
+}
+.pager .next:hover,
+.pager .prev:hover {
+	background-color: rgba(124,205,72,0.4);	
+}
+.pager .next::after,
+.pager .prev::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 7px;
+	bottom: 7px;
+	left: 7px;
+	right: 7px;
+	background-color: rgba(124,205,72,0.2);
+	border-radius: 50%;
+}
+.pager .prev {
+	left: 25px;
+}
+.pager .next {
+	right: 25px;
+}
+.news-page {
+	padding-bottom: 40px;
+	background-image: url(../img/bg_page2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.wrapper {
+	padding-top: 82px;
+}
+.modal-wrap .block-form {
+	padding-top: 25px;
+	padding-bottom: 35px;
+	margin: 0 auto;
+	background-color: #e1f1d7;
+	border-radius: 8px;
+	background-image: none;
+}
+.fancybox-skin {
+	padding: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+.fancybox-inner {
+overflow: visible !important;
+}
+.modal-wrap .block-form__title {
+	padding-bottom: 6px;
+	text-align: center;
+}
+.fancybox-close {
+	top: 10px;
+	right: 10px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 25px;
+	color: #aa2f50;
+	background-image: none !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-weight: 500;
+	font-family: "Font Awesome 5 Pro";
+}
+.fancybox-close::before {
+	content: "\f057";
+}
+.modal-wrap .block-form .btn-main {
+	margin-top: 11px;
+}
+.article {
+	padding-bottom: 60px;
+		background-image: url(../img/bg_page2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.breadumbs {
+	padding: 18px 0;
+	font-size: 14px;
+line-height: 1.2;
+color: #34282c;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.breadumbs li a {
+	color: #34282c;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s;
+}
+.breadumbs li a:hover {
+	border-color: #34282c;
+}
+.breadumbs span {
+	margin: 0 13px;
+}
+.article-block__image img {
+	max-width: 100%;
+	border-radius: 6px;
+}
+
+.article-block {
+	padding: 14px 68px;
+	padding-bottom: 24px;
+	padding-right: 50px;
+	font-size: 14px;
+line-height: 21px;
+font-weight: 500;
+background-color: #ffffff;
+box-shadow: 0px 15px 20px 0px rgba(190,72,124,0.15);
+border-radius: 6px;
+}
+.title-middle {
+	font-size: 22px;
+line-height: 30px;
+font-weight: 600;
+}
+.article-block .title-middle {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.article-block .title-section {
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.article-block li,
+.article-block p {
+	margin-bottom: 20px;
+	position: relative;
+}
+.article-block__top {
+	margin-left: -68px;
+}
+.list-numbers li {
+	padding-left: 30px;
+}
+.list-numbers ul {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.list-numbers li {
+  counter-increment: my-awesome-counter;
+}
+.list-numbers li::before { 
+	position: absolute;
+	font-size: 18px;
+line-height: 30px;
+font-weight: 600;
+color: #7ccd48;
+top: -3px;
+left: 0;
+  content: counter(my-awesome-counter) ". ";
+}
+.list-aricle li {
+	padding-left: 30px;
+}
+.list-aricle li::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 19px;
+	height: 19px;
+	top: 0;
+	left: 0;
+	background-image: url(../img/check2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.modal-block {
+	display: none;
 }  
